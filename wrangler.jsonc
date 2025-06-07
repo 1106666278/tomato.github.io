@@ -1,0 +1,8 @@
+{
+  "name": "your-static-site-name", // 给您的项目起个名字
+  "compatibility_date": "2025-06-07", // 使用日志中的日期或当前日期
+  "assets": {
+    "directory": "." // <-- **关键在这里，指向仓库的根目录**
+  }
+  // 因为您没有 Worker 脚本，只有静态资源，所以不需要 "main" 字段
+}
