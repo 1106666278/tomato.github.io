@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minijoy Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入图标库，这里使用简单的文本或占位符 -->
+    <!-- 如果需要真实图标，可以引入Font Awesome等库 -->
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-icon">&#9776;</div> <!-- 菜单图标 -->
+            <div class="logo">🎮 MINIPLAY</div>
+        </div>
+        <div class="header-center">
+            <input type="text" placeholder="What are we playing today?" class="search-input">
+            <button class="search-button">&#128269;</button> <!-- 搜索图标 -->
+        </div>
+        <div class="header-right">
+            <a href="#" class="top-nav-link">NEW GAMES</a>
+            <a href="#" class="top-nav-link active">MOST PLAYED</a>
+            <a href="#" class="top-nav-link">MOST LIKED</a>
+            <a href="#" class="top-nav-link">EARN GEMS</a>
+            <div class="top-nav-icon">🏆</div> <!-- 奖杯图标 -->
+            <span>MINITORNEOS, CHAT & MAKE FRIENDS</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#new-games"><span class="icon">🆕</span> New games <span class="count">34</span></a></li>
+                <li><a href="#achievements"><span class="icon">🏆</span> Achievements</a></li>
+                <li><a href="#trending"><span class="icon">📈</span> Trending</a></li>
+                <li><a href="#updated"><span class="icon">🕒</span> Updated <span class="indicator"></span></a></li>
+                <li><a href="#recent"><span class="icon">🕰️</span> Recent</a></li>
+                <li><a href="#random"><span class="icon">🎲</span> Random</a></li>
+                <li class="separator"></li>
+                <li><a href="#multiplayer"><span class="icon">👥</span> Multiplayer <span class="count">1322</span></a></li>
+                <li><a href="#2players"><span class="icon">🎮</span> 2 Players Games</a></li>
+                <li><a href="#action"><span class="icon">⚔️</span> Action</a></li>
+                <li><a href="#adventure"><span class="icon">🚩</span> Adventure</a></li>
+                <li><a href="#racing"><span class="icon">🏁</span> Racing</a></li>
+                <li><a href="#classic"><span class="icon">🕹️</span> Classic</a></li>
+                <li><a href="#mario"><span class="icon">🍄</span> Mario Bros</a></li>
+                <li><a href="#kids"><span class="icon">🧸</span> Kids</a></li>
+                <li><a href="#pokemon"><span class="icon">👾</span> Pokemon</a></li>
+                <li><a href="#board"><span class="icon">♠️</span> Board</a></li>
+                <li><a href="#cards"><span class="icon">🃏</span> Cards</a></li>
+                <li><a href="#football"><span class="icon">⚽</span> Football</a></li>
+                <li><a href="#car"><span class="icon">🚗</span> Car</a></li>
+                <li><a href="#motorbike"><span class="icon">🏍️</span> Motorbike</a></li>
+                <li><a href="#dress-up"><span class="icon">👗</span> Dress Up</a></li>
+                <li><a href="#cooking"><span class="icon">🍳</span> Cooking</a></li>
+                <li><a href="#pc"><span class="icon">💻</span> PC</a></li>
+                <li><a href="#minecraft"><span class="icon">⛏️</span> Minecraft</a></li>
+                <li><a href="#horror"><span class="icon">👻</span> Horror</a></li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </nav>
+
+        <main class="game-area">
+            <div class="game-grid">
+                <!-- Example Game Card -->
+                <a href="#game-fireboy" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=FireBoy+and+WaterGirl" alt="FireBoy and WaterGirl">
+                    <div class="overlay-indicators">
+                        <span class="indicator-yellow"></span>
+                        <!-- <span class="indicator-green"></span> -->
+                    </div>
+                    <p>FireBoy and Wat...</p>
+                </a>
+                 <a href="#game-wordle" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Wordle" alt="Wordle">
+                     <div class="overlay-indicators">
+                        <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Wordle</p>
+                </a>
+                 <a href="#game-pacman" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Pacman" alt="Pacman">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Pacman</p>
+                </a>
+                 <a href="#game-uno" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=UNO+Online" alt="UNO Online">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+61</span>
+                    </div>
+                    <p>UNO Online</p>
+                </a>
+                 <a href="#game-minecraft" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Minecraft" alt="Minecraft">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+17</span>
+                    </div>
+                    <p>Minecraft</p>
+                </a>
+                 <a href="#game-poker" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Poker+Texas+Holdem" alt="Poker Texas Holdem">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+101</span>
+                    </div>
+                    <p>Poker Texas Hold</p>
+                </a>
+                 <a href="#game-dominoes" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Dominoes" alt="Dominoes">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+106</span>
+                    </div>
+                    <p>Dominoes</p>
+                </a>
+                 <a href="#game-mario64" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Super+Mario+64" alt="Super Mario 64">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Super Mario 64</p>
+                </a>
+                 <a href="#game-amongus" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Among+Us" alt="Among Us: Online">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Among Us: Onlin...</p>
+                </a>
+                 <a href="#game-fnaf" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Friday+Night+Funkin" alt="Friday Night Funkin">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Friday Night Fun...</p>
+                </a>
+                <!-- Add more game cards following the image -->
+                 <a href="#game-avatarworld" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Avatar+World" alt="Avatar World">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+16</span>
+                    </div>
+                    <p>Avatar World</p>
+                </a>
+                 <a href="#game-roblox" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Roblox" alt="Roblox">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+16</span>
+                    </div>
+                    <p>Roblox</p>
+                </a>
+                 <a href="#game-truco" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Argentinian+Truco" alt="Argentinian Truco">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+90</span>
+                    </div>
+                    <p>Argentinian Truco</p>
+                </a>
+                 <a href="#game-chincho" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Chinchon+Online" alt="Chinchon Online">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+136</span>
+                    </div>
+                    <p>Chinchón Online</p>
+                </a>
+                 <a href="#game-icecream" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Bad+Ice-Cream" alt="Bad Ice-Cream">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+26</span>
+                    </div>
+                    <p>Bad Ice-Cream</p>
+                </a>
+                 <a href="#game-8ball" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=8+Ball+Pool" alt="8 Ball Pool">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+26</span>
+                    </div>
+                    <p>8 Ball Pool</p>
+                </a>
+                <a href="#game-granny" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Granny" alt="Granny: Chapter ...">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Granny: Chapter ...</p>
+                </a>
+                <a href="#game-fnaf5" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Five+nights+at+Freddy's" alt="Five nights at Fre...">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Five nights at Fre...</p>
+                </a>
+                 <a href="#game-tekken3" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Tekken+3" alt="Tekken 3">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+115</span>
+                    </div>
+                    <p>Tekken 3</p>
+                </a>
+                 <a href="#game-parcheesi" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Parcheesi" alt="Parcheesi">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+115</span>
+                    </div>
+                    <p>Parcheesi</p>
+                </a>
+                 <a href="#game-tute" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Tute" alt="Tute">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+107</span>
+                    </div>
+                    <p>Tute</p>
+                </a>
+                <!-- Continue adding rows of games -->
+                 <a href="#game-surveyio" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Survey.io" alt="Survey.io Battle R...">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+57</span>
+                    </div>
+                    <p>Survey.io Battle R...</p>
+                </a>
+                <a href="#game-googlepacman" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Google+PacMan" alt="Google PacMan">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Google PacMan</p>
+                </a>
+                 <a href="#game-geometry" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Geometry+Vibes" alt="Geometry Vibes">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Geometry Vibes</p>
+                </a>
+                 <a href="#game-pokemonq" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Pokemon+Quetzal" alt="Pokemon Quetzal">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Pokemon Quetzal</p>
+                </a>
+                 <a href="#game-sprunki" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Sprunki+Pyramixed" alt="Sprunki Pyramixed">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Sprunki Pyramixed</p>
+                </a>
+                 <a href="#game-letsfish" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Let's+fish" alt="Let's fish">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                       <span class="indicator-green">+20</span>
+                    </div>
+                    <p>Let's fish</p>
+                </a>
+                 <a href="#game-sonic" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Sonic+3+%26+Knuckles" alt="Sonic 3 & Knuckl...">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Sonic 3 & Knuckl...</p>
+                </a>
+                 <a href="#game-catmario" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Cat+Mario" alt="Cat Mario">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Cat Mario</p>
+                </a>
+                 <a href="#game-cuphead" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Cuphead" alt="Cuphead">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Cuphead</p>
+                </a>
+                 <a href="#game-supermariokart" class="game-card">
+                    <img src="https://via.placeholder.com/150x150?text=Super+Mario+Kart" alt="Super Mario Kart">
+                     <div class="overlay-indicators">
+                       <span class="indicator-yellow"></span>
+                    </div>
+                    <p>Super Mario Kart</p>
+                </a>
+                 <!-- Add more game cards... -->
+            </div>
+
+            <div class="popular-games">
+                <h3>POPULAR</h3>
+                <ul>
+                    <li><a href="#popular-mario"><span class="icon">🍄</span> MARIO BROS GAMES</a></li>
+                    <li><a href="#popular-cooking"><span class="icon">🍳</span> COOKING GAMES</a></li>
+                    <li><a href="#popular-barbie"><span class="icon">🎀</span> BARBIE GAMES</a></li>
+                    <li><a href="#popular-simpsons"><span class="icon">🍩</span> THE SIMPSONS GAMES</a></li>
+                    <li><a href="#popular-car"><span class="icon">🚗</span> CAR GAMES</a></li>
+                    <li><a href="#popular-dressup"><span class="icon">👗</span> DRESS UP GAMES</a></li>
+                     <!-- Add more popular categories -->
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
