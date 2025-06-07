@@ -1,0 +1,105 @@
+/* Basic Reset and Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f4f7f6; /* Light background color */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+}
+
+/* Container for centering and max-width */
+.container {
+    max-width: 960px; /* Maximum width of content */
+    margin: 20px auto; /* Center the container with top/bottom margin */
+    padding: 0 20px; /* Add padding on left/right on smaller screens */
+    background-color: #fff; /* White background for content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clear floats/margins */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; /* Separator line */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #007bff; /* A pleasant blue color for the title */
+    font-size: 2.5em;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px; /* Space between sections */
+}
+
+h2 {
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Description and Details Paragraphs */
+.description p,
+.game-details p {
+    margin-bottom: 15px;
+    text-align: justify; /* Align text nicely */
+}
+
+/* Game Container and IFRAME Wrapper for Aspect Ratio */
+.game-container {
+     margin-bottom: 30px; /* Space below game */
+}
+
+.iframe-wrapper {
+    position: relative; /* Needed for absolute positioning of iframe */
+    width: 100%; /* Wrapper takes full width of its container */
+    padding-top: 56.25%; /* This creates a 16:9 aspect ratio (9 / 16 * 100) */
+    background-color: #000; /* Black background while iframe loads */
+    border-radius: 8px; /* Match container corners */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.iframe-wrapper iframe {
+    position: absolute; /* Position iframe relative to wrapper */
+    top: 0;
+    left: 0;
+    width: 100%; /* iframe fills the wrapper */
+    height: 100%; /* iframe fills the wrapper */
+    border: 0; /* Remove default iframe border */
+    display: block; /* Remove extra space below iframe */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #eee; /* Separator line */
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Basic responsiveness adjustments */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 0 10px;
+        box-shadow: none;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .iframe-wrapper {
+         padding-top: 75%; /* Adjust aspect ratio slightly for smaller screens if needed, 4:3 example */
+         /* Or keep 56.25% for 16:9 */
+    }
+}
