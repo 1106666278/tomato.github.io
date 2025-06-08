@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Title Tag - Incorporate Keyword and Brand -->
+    <title>Play Wordle Online for Free at laiot.cloud</title>
+    
+    <!-- SEO: Meta Description - Engaging summary with keywords -->
+    <meta name="description" content="Play the popular daily word puzzle game Wordle online for free at laiot.cloud. Guess the five-letter word in six tries!">
+    
+    <!-- SEO: Canonical URL - Prevents duplicate content issues. Points to the preferred URL for this game page. -->
+    <!-- Assuming this game page is at the root or is the primary page for laiot.cloud -->
+    <link rel="canonical" href="https://laiot.cloud/"> 
+    <!-- If this game has a specific page URL, update the href accordingly, e.g., https://laiot.cloud/wordle/ -->
+
+    <!-- Keywords (Optional, include relevant terms) -->
+    <meta name="keywords" content="Wordle, Play Wordle, Word Game, Puzzle Game, Daily Wordle, Play Online, Free Game, laiot.cloud, Guess the Word">
+
+    <!-- Preload Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for responsive iframe container */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            /* Maintain 16:9 aspect ratio (height / width = 9 / 16 = 0.5625) - Adjust if the game's native aspect ratio is different */
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%; /* Ensure it doesn't exceed parent width */
+            background-color: #000; /* Optional: Black background while loading */
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+         /* Basic font stack similar to Apple systems */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        /* Style for the site title/logo link in the header */
+        .site-title-link {
+            display: inline-block; /* Allows padding/margin */
+            margin-bottom: 1rem; /* Space below the site title */
+            text-decoration: none; /* Remove default underline */
+            color: #374151; /* A dark gray color */
+            font-weight: bold;
+            font-size: 1.25rem; /* Text-xl equivalent */
+        }
+         .site-title-link:hover {
+            color: #1f2937; /* Slightly darker on hover */
+         }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <div class="container mx-auto px-4 py-8 md:py-12 max-w-screen-lg">
+
+        <!-- Header Section -->
+        <header class="text-center mb-8 md:mb-12">
+            <!-- Link back to Home -->
+            <div class="text-left mb-6"> <!-- Align left for site title link -->
+                 <a href="https://www.laiot.cloud/" class="site-title-link">
+                    laiot.cloud
+                 </a>
+            </div>
+
+            <!-- H1: Main Keyword and Title -->
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
+                Play Wordle Online
+            </h1>
+            <!-- One-sentence Introduction -->
+            <p class="text-lg md:text-xl text-gray-600">
+                Challenge your vocabulary and guess the secret five-letter word every day!
+            </p>
+        </header>
+
+        <!-- Game Section - IFRAME -->
+        <section id="play-game" class="mb-8 md:mb-12">
+            <!-- H2: Call to Action -->
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                Start Playing Wordle Now
+            </h2>
+            <div class="iframe-container rounded-lg shadow-xl overflow-hidden">
+                <!-- Game IFRAME -->
+                <iframe 
+                    src="https://www.miniplay.com/embed/wordle" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- About Game Section -->
+        <section id="about-game" class="mb-8 md:mb-12">
+            <!-- H2: Section Title -->
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                About the Viral Word Puzzle Game
+            </h2>
+            <p class="mb-6 text-gray-700">
+                Wordle is a popular web-based word puzzle game where players have six attempts to guess a five-letter word. After each guess, the game provides feedback in the form of colored tiles, indicating whether letters are correct and in the correct position, correct but in the wrong position, or not in the word at all.
+            </p>
+
+            <!-- H2: Gameplay Details -->
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-3">
+                How to Play Wordle: The Rules
+            </h2>
+            <p class="mb-6 text-gray-700">
+                Type in a five-letter word and press Enter. The tiles will change color:
+            </p>
+            <ul class="list-disc list-inside mb-6 text-gray-700 space-y-2">
+                <li><strong class="text-green-600">Green</strong>: The letter is correct and in the correct spot.</li>
+                <li><strong class="text-yellow-600">Yellow</strong>: The letter is in the word but in the wrong spot.</li>
+                <li><strong class="text-gray-500">Gray</strong>: The letter is not in the word at all.</li>
+            </ul>
+             <p class="mb-6 text-gray-700">
+                Use the feedback from each guess to deduce the correct word within six tries. A new puzzle is available each day.
+            </p>
+
+
+            <!-- H2: Key Features -->
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-3">
+                Why Wordle is So Addictive
+            </h2>
+            <ul class="list-disc list-inside mb-6 text-gray-700 space-y-2">
+                <li>Simple and easy-to-learn rules.</li>
+                <li>A single, challenging daily puzzle keeps you coming back.</li>
+                <li>Satisfying feedback system with colored tiles.</li>
+                <li>Short gameplay sessions perfect for a quick break.</li>
+                <li>Tests your vocabulary and deductive reasoning skills.</li>
+            </ul>
+
+             <!-- H2: Play Wordle Instantly on laiot.cloud -->
+            <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-3">
+                Enjoy Wordle Seamlessly on laiot.cloud
+            </h2>
+            <p class="mb-6 text-gray-700">
+               Dive into the daily Wordle challenge directly from your browser on laiot.cloud. Play for free anytime, anywhere, on your desktop or mobile device – no downloads needed!
+            </p>
+
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-8 md:mt-12 text-gray-500 text-sm">
+            <p>&copy; 2025 laiot.cloud. All rights reserved. | <a href="https://www.laiot.cloud/" class="text-gray-600 hover:underline">Back to Home</a></p>
+            <!-- You can add other footer links here, e.g., | <a href="/privacy">Privacy Policy</a> -->
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Title Tag - Incorporate Keyword and Brand -->
+    <title>Play  Online for Free at laiot.cloud</title>
+    
+    <!-- SEO: Meta Description - Engaging summary with keywords -->
+    <meta name="description" content="Play the popular daily word puzzle game Wordle online for free at laiot.cloud. Guess the five-letter word in six tries!">
+    
+    <!-- SEO: Canonical URL - Prevents duplicate content issues. Points to the preferred URL for this game page. -->
+    <!-- Assuming this game page is at the root or is the primary page for laiot.cloud -->
+    <link rel="canonical" href="https://laiot.cloud/"> 
+    <!-- If this game has a specific page URL, update the href accordingly, e.g., https://laiot.cloud/wordle/ -->
+
+    <!-- Keywords (Optional, include relevant terms) -->
+    <meta name="keywords" content="Wordle, Play Wordle, Word Game, Puzzle Game, Daily Wordle, Play Online, Free Game, laiot.cloud, Guess the Word">
+
+    <!-- Preload Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for responsive iframe container */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            /* Maintain 16:9 aspect ratio (height / width = 9 / 16 = 0.5625) - Adjust if the game's native aspect ratio is different */
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%; /* Ensure it doesn't exceed parent width */
+            background-color: #000; /* Optional: Black background while loading */
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+         /* Basic font stack similar to Apple systems */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        /* Style for the site title/logo link in the header */
+        .site-title-link {
+            display: inline-block; /* Allows padding/margin */
+            margin-bottom: 1rem; /* Space below the site title */
+            text-decoration: none; /* Remove default underline */
+            color: #374151; /* A dark gray color */
+            font-weight: bold;
+            font-size: 1.25rem; /* Text-xl equivalent */
+        }
+         .site-title-link:hover {
+            color: #1f2937; /* Slightly darker on hover */
+         }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <div class="container mx-auto px-4 py-8 md:py-12 max-w-screen-lg">
+
+        <!-- Header Section -->
+        <header class="text-center mb-8 md:mb-12">
+            <!-- Link back to Home -->
+            <div class="text-left mb-6"> <!-- Align left for site title link -->
+                 <a href="https://www.laiot.cloud/" class="site-title-link">
+                    laiot.cloud
+                 </a>
+            </div>
+
+            <!-- H1: Main Keyword and Title -->
+            <!-- <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
+                Play Wordle Online
+            </h1> -->
+            <!-- One-sentence Introduction -->
+            <p class="text-lg md:text-xl text-gray-600">
+                Challenge your vocabulary and guess the secret five-letter word every day!
+            </p>
+        </header>
+
+        <!-- Game Section - IFRAME -->
+        <section id="play-game" class="mb-8 md:mb-12">
+            <!-- H2: Call to Action -->
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                Start Playing Wordle Now
+            </h2>
+            <div class="iframe-container rounded-lg shadow-xl overflow-hidden">
+                <!-- Game IFRAME -->
+                <iframe src='https://www.miniplay.com/embed/among-us-online-edition' style='width:100%;height:100%;' frameborder='0' allowfullscreen></iframe></div>
+        </section>
+
+        <!-- About Game Section -->
+
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-8 md:mt-12 text-gray-500 text-sm">
+            <p>&copy; 2025 laiot.cloud. All rights reserved. | <a href="https://www.laiot.cloud/" class="text-gray-600 hover:underline">Back to Home</a></p>
+            <!-- You can add other footer links here, e.g., | <a href="/privacy">Privacy Policy</a> -->
+        </footer>
+
+    </div>
+
+</body>
+</html>
